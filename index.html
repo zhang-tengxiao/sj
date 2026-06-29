@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO核心元数据 -->
+    <title>视界-专业GB28181视频管理软件 |企业视频存档维权资料共享系统</title>
+    <meta name="description" content="视界一站式视频综合管理系统，告别监控视频杂乱难找、维权取证无录像难题，兼容GB28181设备远程实时监控；内置企业共享资料库，分个人/企业双版本，企业可独立管理员工账号、自定义角色与模块权限，快速解决安防视频存储与团队文件协同痛点，立即注册试用：13065801826">
+    <meta name="keywords" content="视频管理软件,GB28181监控系统,企业视频权限管理,维权视频存档,安防录像统一管理,团队资料共享平台">
+    <!-- Schema结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "视界",
+        "description": "一站式视频综合管理系统，解决传统视频散乱难检索、维权视频丢失痛点，兼容GB28181国标设备远程监控实时回传，集成可共享资料库，区分个人版、企业版，企业支持组织架构、员工账号、精细化权限管控",
+        "applicationCategory": "安防管理软件,企业文件协同系统",
+        "offers": {
+            "@type": "Offer",
+            "url": "https://sj.nbhhxx.cn:9082/"
+        },
+        "provider": {
+            "@type": "Person",
+            "name": "张经理",
+            "telephone": "13065801826"
+        }
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", PingFangSC, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.7;
+            background-color: #f7f9fc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 头部导航 */
+        header {
+            background: #0f4c94;
+            color: #fff;
+            padding: 16px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .header-contact {
+            font-size: 16px;
+        }
+        .header-contact span {
+            margin-left: 12px;
+        }
+        /* 注册主按钮 视觉突出 */
+        .btn-reg {
+            display: inline-block;
+            background: #ff6b22;
+            color: #fff;
+            padding: 10px 26px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .btn-reg:hover {
+            background: #e05c1a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255,107,34,0.3);
+        }
+        /* 首屏横幅 */
+        section.banner {
+            background: linear-gradient(135deg, #1658aa 0%, #0a3266 100%);
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .banner p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: 0 auto 35px;
+            opacity: 0.98;
+        }
+        .banner-btns {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        /* 通用区块 */
+        section {
+            padding: 60px 0;
+        }
+        section h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0f4c94;
+        }
+        .bg-white {
+            background: #ffffff;
+        }
+        /* 痛点卡片 */
+        .pain-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .pain-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(15,76,148,0.08);
+        }
+        .pain-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: #0f4c94;
+        }
+        /* 功能卡片 */
+        .func-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .func-card {
+            background: #f0f6fd;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #0f4c94;
+        }
+        /* 版本对比表格 */
+        .version-table-wrap {
+            overflow-x: auto;
+        }
+        table.version-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .version-table th, .version-table td {
+            padding: 16px;
+            border: 1px solid #e2e8f0;
+            text-align: center;
+        }
+        .version-table thead tr {
+            background: #0f4c94;
+            color: white;
+        }
+        .version-table tr:nth-child(even) {
+            background: #f7faff;
+        }
+        /* 底部 */
+        footer {
+            background: #0a284d;
+            color: #cbd5e1;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 8px 0;
+        }
+        .footer-reg {
+            margin: 25px 0;
+        }
+        /* 移动端适配 */
+        @media screen and (max-width:768px) {
+            .banner h1 {
+                font-size: 30px;
+            }
+            section h2 {
+                font-size: 24px;
+            }
+            .logo {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- 头部导航：仅1个注册按钮 -->
+<header>
+    <div class="container header-wrap">
+        <div class="logo">视界 · 一站式视频综合管理系统</div>
+        <div class="header-contact">
+            咨询专线：张经理 <span>13065801826</span>
+            <a href="https://sj.nbhhxx.cn:9082/" class="btn-reg" style="margin-left:15px;">免费注册</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏主视觉：核心转化入口 -->
+    <section class="banner">
+        <div class="container">
+            <h1>视界｜搞定安防监控、视频存档、团队资料全流程管理</h1>
+            <p>还在为监控录像杂乱翻找几小时？关键维权视频丢失白白受损？多台国标摄像头分散无法统一查看？视界一套系统全部解决，兼容GB28181设备实时回传录像，内置共享资料库，个人、企业两套版本按需选用，大幅节省人力、规避取证损失！</p>
+            <div class="banner-btns">
+                <a href="https://sj.nbhhxx.cn:9082/" class="btn-reg">立即注册体验</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 行业痛点（强化损失感，提升用户共鸣） -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>这些视频管理难题，正在消耗你的时间与成本</h2>
+            <div class="pain-list">
+                <article class="pain-card">
+                    <h3>痛点一：海量视频散乱存放，调取耗时费力</h3>
+                    <p>监控录像、工作取证视频分散在硬盘、电脑、多台录像机中，员工离职、时隔数月后想要溯源，翻找几小时都找不到，大量人力浪费在低效检索上。视界统一归档所有视频，标签一键筛选，几秒定位目标录像。</p>
+                </article>
+                <article class="pain-card">
+                    <h3>痛点二：维权关键录像自动覆盖，举证无凭损失惨重</h3>
+                    <p>本地监控循环覆盖、硬盘损坏、文件误删，发生纠纷、事故时缺少完整视频证据，索赔、维权处处被动，造成无法挽回的经济损失。系统云端持久留存视频素材，永久保存取证依据，维权全程有保障。</p>
+                </article>
+                <article class="pain-card">
+                    <h3>痛点三：多点位国标设备孤立，无法远程统一管控</h3>
+                    <p>厂区、门店、工地多台摄像头分属不同平台，出差在外不能实时查看，调取历史录像操作繁琐。视界全面兼容GB28181国标协议，单平台集中管理全部设备，随时随地远程预览、云端回传视频。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心功能（突出收益，弱化干巴巴功能描述） -->
+    <section>
+        <div class="container">
+            <h2>视界三大核心能力，一次性解决全部视频管理需求</h2>
+            <div class="func-list">
+                <article class="func-card">
+                    <h3>GB28181国标设备集中监控，远程实时查看</h3>
+                    <p>无缝对接市面所有国标摄像头、NVR录像机，无需额外加装硬件，登录系统即可实时预览画面、云端存储录像、随时调取历史视频，多设备统一管理，告别多平台来回切换。</p>
+                </article>
+                <article class="func-card">
+                    <h3>全能共享资料库，个人归档、团队协同两不误</h3>
+                    <p>不限格式上传视频、合同、图纸、文档、图片，支持私人归档与团队分组共享，自定义分类目录，企业内部资料快速互通，告别U盘传输、微信文件过期等协作麻烦。</p>
+                </article>
+                <article class="func-card">
+                    <h3>双版本账号体系，企业专属精细化权限管控</h3>
+                    <p>注册自动区分个人版与企业版；企业版可搭建完整组织架构，批量创建员工账号，自定义管理员、普通员工等角色，针对监控、资料库单独分配访问权限，隔离敏感视频数据，保障企业信息安全。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 版本对比（清晰凸显企业版增值价值，1处注册按钮） -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>个人版 VS 企业版，按需选择适配自身场景</h2>
+            <div class="version-table-wrap">
+                <table class="version-table">
+                    <thead>
+                        <tr>
+                            <th>功能项目</th>
+                            <th>个人版</th>
+                            <th>企业版</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GB28181设备接入、实时监控回放</td>
+                            <td>支持</td>
+                            <td>完整批量管理，多设备分组</td>
+                        </tr>
+                        <tr>
+                            <td>视频云端存档、维权素材永久留存</td>
+                            <td>支持</td>
+                            <td>企业大容量长期归档存储</td>
+                        </tr>
+                        <tr>
+                            <td>私人资料库文件上传存储</td>
+                            <td>支持</td>
+                            <td>支持+多人团队共享资料库</td>
+                        </tr>
+                        <tr>
+                            <td>创建企业组织架构、员工子账号</td>
+                            <td>不支持</td>
+                            <td>完整支持</td>
+                        </tr>
+                        <tr>
+                            <td>自定义角色、模块独立权限分配</td>
+                            <td>不支持</td>
+                            <td>精细化权限管控，数据隔离</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="text-align:center; margin-top:40px;">
+                <a href="https://sj.nbhhxx.cn:9082/" class="btn-reg">注册匹配对应版本</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 转化咨询板块（强力促单文案） -->
+    <section style="background:#0f4c94; color:#fff; text-align:center;">
+        <div class="container">
+            <h2 style="color:#fff;">告别视频管理乱象，一套视界降低取证与人力成本</h2>
+            <p style="max-width:720px; margin:0 auto 30px; font-size:17px;">个人商户留存取证录像、中小企业统一管理厂区安防、团队共享工程资料，全部场景适配，免费注册即可体验完整功能，有任何疑问可直接致电沟通</p>
+            <div style="font-size:18px;">咨询对接：张经理 13065801826</div>
+        </div>
+    </section>
+</main>
+
+<!-- 页脚最后一处注册入口 -->
+<footer>
+    <div class="container">
+        <div class="footer-reg">
+            <a href="https://sj.nbhhxx.cn:9082/" class="btn-reg">进入注册系统</a>
+        </div>
+        <p>联系热线：张经理 13065801826</p>
+        <p>产品：视界 GB28181视频综合管理软件 | 企业视频权限管理&维权录像存档平台</p>
+        <p style="margin-top:20px; font-size:14px;">©2026 视界视频管理系统 版权所有 | 网站已完成ICP备案 | <a href="#" style="color:#94b8e0;">隐私政策</a></p>
+    </div>
+</footer>
+</body>
+</html>
